@@ -1,0 +1,44 @@
+{
+    "name": "taufik464/ai-rotation-manager",
+    "description": "Laravel package for multi-provider and multi-account AI API key rotation.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0",
+        "illuminate/cache": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/config": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/console": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/http": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^9.6|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourVendor\\AIRotationManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YourVendor\\AIRotationManager\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YourVendor\\AIRotationManager\\AIRotationServiceProvider"
+            ],
+            "aliases": {
+                "AIRotation": "YourVendor\\AIRotationManager\\Facades\\AIRotation"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "analyse": "php -l src/AIRotationServiceProvider.php"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
