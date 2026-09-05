@@ -10,7 +10,7 @@ Laravel package untuk rotasi API key multi-provider dan multi-account. Groq dipr
 ## Installation
 
 ```bash
-composer require your-vendor/ai-rotation-manager
+composer require taufik464/ai-rotation-manager
 php artisan vendor:publish --tag=ai-rotation-config
 ```
 
