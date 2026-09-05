@@ -1,4 +1,5 @@
 <?php
+
 return [
     'cooldown_seconds' => (int) env('AI_ROTATION_COOLDOWN_SECONDS', 60),
 
