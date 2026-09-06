@@ -4,8 +4,8 @@ Laravel package untuk rotasi API key multi-provider dan multi-account. Groq dipr
 
 ## Requirements
 
-- PHP 8.0+
-- Laravel 10+
+- PHP 8.0+ (PHP 8.3+ untuk Laravel 13)
+- Laravel 9 sampai Laravel 13
 
 ## Installation
 
